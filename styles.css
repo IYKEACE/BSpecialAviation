@@ -63,6 +63,61 @@ main {
   }
 }
 
+@media (max-width: 767px) {
+  main {
+    grid-template-columns: 1fr;
+    padding: 0 0.5rem;
+  }
+  .booking-form,
+  .contact-info {
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .booking-form h2,
+  .contact-info h2,
+  .testimonials h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 380px) {
+  body {
+    font-size: 14px;
+  }
+  main {
+    padding: 0 0.2rem;
+  }
+  .logo {
+    height: 50px;
+  }
+  .booking-form,
+  .contact-info {
+    padding: 0.5rem;
+    border-radius: 4px;
+  }
+  button {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+  .testimonial-card {
+    padding: 0.7rem;
+  }
+  .testimonial-text {
+    font-size: 0.95rem;
+  }
+  .testimonial-author {
+    font-size: 0.95rem;
+  }
+}
+
 .booking-form {
   background: var(--white);
   padding: 2rem;

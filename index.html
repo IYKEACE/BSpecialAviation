@@ -31,7 +31,7 @@
     <main>
       <section class="booking-form">
         <h2>Book Your Travel</h2>
-        <form action="https://wa.me/2348028256981" method="get" target="_blank">
+        <form id="whatsappForm">
           <div class="form-group">
             <input type="text" name="name" placeholder="Full Name" required />
           </div>
@@ -111,7 +111,7 @@
 
         <div class="contact-item">
           <div class="contact-icon">
-          <i class="fa-solid fa-user-group"></i>
+            <i class="fa-solid fa-user-group"></i>
           </div>
           <div class="contact-text">
             <h3>Social Media</h3>
@@ -173,16 +173,17 @@
           </div>
           <div class="testimonial-card">
             <p class="testimonial-text">
-              "They helped me sort out last-minute flight changes with no hassle. That’s real customer care!"
+              "They helped me sort out last-minute flight changes with no
+              hassle. That’s real customer care!"
             </p>
             <p class="testimonial-author">- Yusuf Ojo-Ogun</p>
           </div>
           <div class="testimonial-card">
-
             <p class="testimonial-text">
-             "Booked my Dubai trip through them. Everything was perfectly arranged. Thank you B Special Aviation Travels!"
+              "Booked my Dubai trip through them. Everything was perfectly
+              arranged. Thank you B Special Aviation Travels!"
             </p>
-            <p class="testimonial-author">- Blessing Clement </p>
+            <p class="testimonial-author">- Blessing Clement</p>
           </div>
           <div class="testimonial-card">
             <p class="testimonial-text">
@@ -200,3 +201,18 @@
     </footer>
   </body>
 </html>
+<script>
+  document
+    .getElementById("whatsappForm")
+    .addEventListener("submit", function (e) {
+      e.preventDefault();
+      var name = this.name.value.trim();
+      var email = this.email.value.trim();
+      var phone = this.phone.value.trim();
+      var service = this.service.value;
+      var details = this.details.value.trim();
+      var message = `Booking Request:%0AName: ${name}%0AEmail: ${email}%0APhone: ${phone}%0AService: ${service}%0ADetails: ${details}`;
+      var whatsappUrl = `https://wa.me/2348028256981?text=${message}`;
+      window.open(whatsappUrl, "_blank");
+    });
+</script>
