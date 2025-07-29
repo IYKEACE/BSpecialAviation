@@ -36,8 +36,8 @@ header {
 }
 
 .logo {
-  height: 80px;
-  width: auto;
+  height: 7rem;
+  width: 10rem;
   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
 }
 
@@ -96,7 +96,7 @@ main {
     padding: 0 0.2rem;
   }
   .logo {
-    height: 50px;
+    height: 70px;
   }
   .booking-form,
   .contact-info {
