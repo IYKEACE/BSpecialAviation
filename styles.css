@@ -131,6 +131,118 @@ main {
   text-align: center;
 }
 
+/* Flight Selector Styles */
+.flight-selector {
+  background: var(--white);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.flight-type {
+  display: flex;
+  margin-bottom: 1.5rem;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.flight-type-btn {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: #f0f0f0;
+  color: var(--dark);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.flight-type-btn.active {
+  background: var(--primary);
+  color: white;
+}
+
+.date-selector {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.date-input {
+  flex: 1;
+}
+
+.date-input label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.date-input input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.passenger-selector label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.passenger-controls {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+.passenger-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.passenger-type:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.counter-btn {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #ddd;
+  background: #f9f9f9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.counter-btn:hover {
+  background: #eee;
+}
+
+.count {
+  min-width: 20px;
+  text-align: center;
+}
+
+/* Hide return date when one-way is selected */
+.flight-type[data-active="one-way"] .return-date {
+  display: none;
+}
+
 .form-group {
   margin-bottom: 1.5rem;
 }
@@ -262,4 +374,21 @@ footer {
 .testimonial-author {
   font-weight: bold;
   color: var(--primary);
+}
+
+/* Responsive adjustments for flight selector */
+@media (max-width: 480px) {
+  .date-selector {
+    flex-direction: column;
+  }
+  
+  .passenger-type {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .counter {
+    margin-top: 0.5rem;
+  }
 }
