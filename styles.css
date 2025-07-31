@@ -1,3 +1,140 @@
+/* Extra small devices (phones, <380px) */
+@media (max-width: 380px) {
+  body {
+    font-size: 13px;
+  }
+  main {
+    padding: 0 0.1rem;
+  }
+  .logo {
+    height: 5rem;
+    width: 7rem;
+  }
+  .booking-form,
+  .contact-info {
+    padding: 0.3rem;
+    border-radius: 3px;
+  }
+  button {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+  .testimonial-card {
+    padding: 0.5rem;
+  }
+  .testimonial-text,
+  .testimonial-author {
+    font-size: 0.85rem;
+  }
+  .flight-type-btn {
+    font-size: 13px;
+    padding: 7px;
+  }
+  .date-input input {
+    padding: 7px;
+    font-size: 13px;
+  }
+}
+
+/* Small devices (phones, <480px) */
+@media (max-width: 480px) {
+  main {
+    padding: 0 0.3rem;
+  }
+  .booking-form,
+  .contact-info {
+    padding: 0.7rem;
+    border-radius: 5px;
+  }
+  .logo {
+    height: 6rem;
+    width: 8rem;
+  }
+  .date-selector {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  .passenger-type {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+  .counter {
+    margin-top: 0.3rem;
+  }
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
+  }
+  h1 {
+    font-size: 1.2rem;
+  }
+  .booking-form h2,
+  .contact-info h2,
+  .testimonials h2 {
+    font-size: 1rem;
+  }
+}
+
+/* Medium devices (tablets, <768px) */
+@media (max-width: 767px) {
+  main {
+    grid-template-columns: 1fr;
+    padding: 0 0.5rem;
+  }
+  .booking-form,
+  .contact-info {
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .booking-form h2,
+  .contact-info h2,
+  .testimonials h2 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Large devices (desktops, >=768px) */
+@media (min-width: 768px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+  .booking-form,
+  .contact-info {
+    padding: 2rem;
+    border-radius: 8px;
+  }
+  .logo {
+    height: 7rem;
+    width: 10rem;
+  }
+  .testimonial-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+/* Extra large devices (large desktops, >=1200px) */
+@media (min-width: 1200px) {
+  main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 3rem;
+  }
+  .testimonial-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
 :root {
   --primary: #003366;
   --secondary: #e6a756;
@@ -320,7 +457,7 @@ button:hover {
 
 .social-media {
   color: var(--dark);
-  font-size:18px;
+  font-size: 18px;
   margin-bottom: 0.5rem;
 }
 .social-links {
@@ -387,13 +524,13 @@ footer {
   .date-selector {
     flex-direction: column;
   }
-  
+
   .passenger-type {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;
   }
-  
+
   .counter {
     margin-top: 0.5rem;
   }
