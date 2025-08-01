@@ -22,7 +22,9 @@
   .testimonial-card {
     padding: 0.5rem;
   }
-  .testimonial-text,
+  .testimonial-text{
+    font-size: 17px;
+  }
   .testimonial-author {
     font-size: 0.85rem;
   }
