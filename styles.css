@@ -1,140 +1,3 @@
-/* Extra small devices (phones, <380px) */
-@media (max-width: 380px) {
-  body {
-    font-size: 13px;
-  }
-  main {
-    padding: 0 0.1rem;
-  }
-  .logo {
-    height: 5rem;
-    width: 7rem;
-  }
-  .booking-form,
-  .contact-info {
-    padding: 0.3rem;
-    border-radius: 3px;
-  }
-  button {
-    font-size: 12px;
-    padding: 8px 10px;
-  }
-  .testimonial-card {
-    padding: 0.5rem;
-  }
-  .testimonial-text {
-    font-size: 0.95rem;
-  }
-  .testimonial-author {
-    font-size: 0.95rem;
-  }
-  .testimonial-text,
-  .testimonial-author {
-    font-size: 0.95rem;
-  }
-    font-size: 13px;
-  }
-}
-
-/* Small devices (phones, <480px) */
-@media (max-width: 480px) {
-  main {
-    padding: 0 0.3rem;
-  }
-  .booking-form,
-  .contact-info {
-    padding: 0.7rem;
-    border-radius: 5px;
-  }
-  .logo {
-    height: 6rem;
-    width: 8rem;
-  }
-  .date-selector {
-    flex-direction: column;
-    gap: 0.7rem;
-  }
-  .passenger-type {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.4rem;
-  }
-  .counter {
-    margin-top: 0.3rem;
-  }
-  .testimonial-grid {
-    grid-template-columns: 1fr;
-    gap: 0.7rem;
-  }
-  h1 {
-    font-size: 1.2rem;
-  }
-  .booking-form h2,
-  .contact-info h2,
-  .testimonials h2 {
-    font-size: 1rem;
-  }
-}
-
-/* Medium devices (tablets, <768px) */
-@media (max-width: 767px) {
-  main {
-    grid-template-columns: 1fr;
-    padding: 0 0.5rem;
-  }
-  .booking-form,
-  .contact-info {
-    padding: 1rem;
-    border-radius: 6px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  }
-  .testimonial-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  h1 {
-    font-size: 1.5rem;
-  }
-  .booking-form h2,
-  .contact-info h2,
-  .testimonials h2 {
-    font-size: 1.2rem;
-  }
-}
-
-/* Large devices (desktops, >=768px) */
-@media (min-width: 768px) {
-  main {
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
-  .booking-form,
-  .contact-info {
-    padding: 2rem;
-    border-radius: 8px;
-  }
-  .logo {
-    height: 7rem;
-    width: 10rem;
-  }
-  .testimonial-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-  }
-}
-
-/* Extra large devices (large desktops, >=1200px) */
-@media (min-width: 1200px) {
-  main {
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0 3rem;
-  }
-  .testimonial-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-  }
-}
 :root {
   --primary: #003366;
   --secondary: #e6a756;
@@ -154,8 +17,10 @@ body {
   background-color: #f5f5f5;
   color: var(--dark);
   line-height: 1.6;
+  font-size: 16px; /* Base font size */
 }
 
+/* Header Styles */
 header {
   background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.9)),
     url("https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1474&q=80")
@@ -176,6 +41,8 @@ header {
   height: 7rem;
   width: 10rem;
   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+  max-width: 100%;
+  height: auto;
 }
 
 .tagline {
@@ -185,6 +52,7 @@ header {
   letter-spacing: 1px;
 }
 
+/* Main Content Layout */
 main {
   max-width: 1200px;
   margin: 2rem auto;
@@ -194,67 +62,7 @@ main {
   gap: 2rem;
 }
 
-@media (min-width: 768px) {
-  main {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 767px) {
-  main {
-    grid-template-columns: 1fr;
-    padding: 0 0.5rem;
-  }
-  .booking-form,
-  .contact-info {
-    padding: 1rem;
-    border-radius: 6px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  }
-  .testimonial-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  h1 {
-    font-size: 1.5rem;
-  }
-  .booking-form h2,
-  .contact-info h2,
-  .testimonials h2 {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 380px) {
-  body {
-    font-size: 14px;
-  }
-  main {
-    padding: 0 0.2rem;
-  }
-  .logo {
-    height: 7rem;
-  }
-  .booking-form,
-  .contact-info {
-    padding: 0.5rem;
-    border-radius: 4px;
-  }
-  button {
-    font-size: 14px;
-    padding: 10px 12px;
-  }
-  .testimonial-card {
-    padding: 0.7rem;
-  }
-  .testimonial-text {
-    font-size: 0.95rem;
-  }
-  .testimonial-author {
-    font-size: 0.95rem;
-  }
-}
-
+/* Booking Form Styles */
 .booking-form {
   background: var(--white);
   padding: 2rem;
@@ -302,6 +110,7 @@ main {
 
 .date-selector {
   display: flex;
+  flex-direction: column;
   gap: 1rem;
   margin-bottom: 1.5rem;
 }
@@ -369,6 +178,7 @@ main {
 
 .counter-btn:hover {
   background: #003366;
+  color: white;
 }
 
 .count {
@@ -381,6 +191,7 @@ main {
   display: none;
 }
 
+/* Form Elements */
 .form-group {
   margin-bottom: 1.5rem;
 }
@@ -424,6 +235,7 @@ button:hover {
   background-color: #002244;
 }
 
+/* Contact Info Section */
 .contact-info {
   background: var(--white);
   padding: 2rem;
@@ -457,9 +269,11 @@ button:hover {
 
 .social-media {
   color: var(--dark);
-  font-size: 18px;
+  font-size: 1.125rem; /* 18px equivalent */
   margin-bottom: 0.5rem;
+  line-height: 1.6;
 }
+
 .social-links {
   display: flex;
   justify-content: center;
@@ -477,14 +291,7 @@ button:hover {
   color: var(--secondary);
 }
 
-footer {
-  background-color: var(--primary);
-  color: var(--white);
-  text-align: center;
-  padding: 1.5rem;
-  margin-top: 2rem;
-}
-
+/* Testimonials Section */
 .testimonials {
   margin-top: 3rem;
   grid-column: 1 / -1;
@@ -512,6 +319,9 @@ footer {
 .testimonial-text {
   font-style: italic;
   margin-bottom: 1rem;
+  font-size: 1.125rem; /* Matching social-media text size (18px) */
+  line-height: 1.6;
+  color: var(--dark);
 }
 
 .testimonial-author {
@@ -519,19 +329,208 @@ footer {
   color: var(--primary);
 }
 
-/* Responsive adjustments for flight selector */
-@media (max-width: 480px) {
+/* Footer */
+footer {
+  background-color: var(--primary);
+  color: var(--white);
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Responsive Design */
+/* Extra small devices (340px and up) */
+@media (min-width: 340px) {
+  body {
+    font-size: 15px;
+  }
+
+  .logo {
+    height: 5.5rem;
+    width: 7.5rem;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  .booking-form h2,
+  .contact-info h2,
+  .testimonials h2 {
+    font-size: 1.1rem;
+  }
+
+  .flight-type-btn {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .date-input input {
+    padding: 8px;
+  }
+
+  button {
+    padding: 10px 15px;
+    font-size: 15px;
+  }
+
+  .testimonial-text,
+  .social-media {
+    font-size: 1rem; /* Slightly smaller on very small devices */
+  }
+}
+
+/* Small devices (576px and up) */
+@media (min-width: 576px) {
+  body {
+    font-size: 15.5px;
+  }
+
+  .logo {
+    height: 6rem;
+    width: 8rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .booking-form,
+  .contact-info {
+    padding: 1.5rem;
+  }
+
+  .testimonial-text,
+  .social-media {
+    font-size: 1.0625rem; /* 17px */
+  }
+}
+
+/* Medium devices (768px and up) */
+@media (min-width: 768px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  .logo {
+    height: 7rem;
+    width: 10rem;
+  }
+
+  .testimonial-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonial-text,
+  .social-media {
+    font-size: 1.125rem; /* 18px */
+  }
+
   .date-selector {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .passenger-type {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
+    flex-direction: row;
+  }
+}
+
+/* Large devices (992px and up) */
+@media (min-width: 992px) {
+  .testimonial-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 
-  .counter {
-    margin-top: 0.5rem;
+  .logo {
+    height: 8rem;
+    width: 11rem;
+  }
+}
+
+/* Extra large devices (1200px and up) */
+@media (min-width: 1200px) {
+  main {
+    padding: 0;
+  }
+
+  .logo {
+    height: 9rem;
+    width: 12rem;
+  }
+}
+
+/* Specific adjustments for very small screens */
+@media (max-width: 340px) {
+  body {
+    font-size: 14px;
+  }
+
+  .logo {
+    @media (max-width: 480px) {
+      .date-selector {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      .date-input {
+        width: 100%;
+        min-width: 0;
+        margin-bottom: 0.5rem;
+      }
+      .passenger-type {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+      }
+      .counter {
+        margin-top: 0.5rem;
+      }
+    }
+    height: 5rem;
+    width: 7rem;
+  }
+
+  header {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .booking-form,
+  .contact-info {
+    padding: 1rem;
+  }
+
+  .flight-type-btn {
+    font-size: 13px;
+    padding: 6px;
+  }
+
+  button {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .testimonial-text,
+  .social-media {
+    font-size: 0.9375rem; /* 15px */
+  }
+}
+
+/* Adjustments for landscape orientation on mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+  header {
+    padding: 1rem 0.5rem;
+  }
+
+  .logo {
+    height: 4rem;
+    width: 6rem;
+  }
+
+  main {
+    margin: 1rem auto;
   }
 }
