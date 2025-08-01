@@ -28,12 +28,10 @@
   .testimonial-author {
     font-size: 0.95rem;
   }
-  .flight-type-btn {
-    font-size: 13px;
-    padding: 7px;
+  .testimonial-text,
+  .testimonial-author {
+    font-size: 0.95rem;
   }
-  .date-input input {
-    padding: 7px;
     font-size: 13px;
   }
 }
