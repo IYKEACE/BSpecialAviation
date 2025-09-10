@@ -3,88 +3,101 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>B Special Aviation</title>
+    <title>B Special Aviation Travels</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <link
-      rel="shortcut icon"
-      href="./images/b special avaition.jpg" alt="B Special Aviation Icon"
-      type="image/x-icon"
-    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="nav-logo">B Special Aviation Travels</div>
+
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link active">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="visa-assistance.html" class="nav-link">Visa Assistance</a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">About</a>
+        </li>
+      </ul>
+
+      <div class="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+
     <header>
       <div class="logo-container">
         <img
           src="./images/bspecialavaition2.jpg"
-          alt="B Special Aviation Travels Logo"
+          alt="B special avaiation"
           class="logo"
         />
       </div>
       <h1>B Special Aviation Travels</h1>
-      <p class="tagline">TRUSTED WAY TO FLY</p>
+      <p class="tagline">Trusted Way To Fly</p>
     </header>
 
     <main>
-      <section class="booking-form">
-        <h2>Book Your Travel</h2>
+      <div class="booking-form">
+        <h2>Book Your Flight</h2>
 
-        <!-- Flight Booking Selector -->
         <div class="flight-selector">
           <div class="flight-type" data-active="return">
             <button
-              class="flight-type-btn active"
               type="button"
+              class="flight-type-btn active"
               data-type="return"
             >
               Return
             </button>
-            <button class="flight-type-btn" type="button" data-type="one-way">
+            <button type="button" class="flight-type-btn" data-type="one-way">
               One Way
             </button>
           </div>
 
           <div class="date-selector">
             <div class="date-input">
-              <label for="departure-date">Departure</label>
+              <label for="departure-date">Departure Date</label>
               <input type="date" id="departure-date" required />
             </div>
             <div class="date-input return-date">
-              <label for="return-date">Return</label>
-              <input type="date" id="return-date" required />
+              <label for="return-date">Return Date</label>
+              <input type="date" id="return-date" />
             </div>
           </div>
 
           <div class="passenger-selector">
-            <div class="passenger-input">
-              <label>Passengers</label>
-              <div class="passenger-controls">
-                <div class="passenger-type">
-                  <span>Adults</span>
-                  <div class="counter">
-                    <button type="button" class="counter-btn minus">-</button>
-                    <span class="count">1</span>
-                    <button type="button" class="counter-btn plus">+</button>
-                  </div>
+            <label>Passengers</label>
+            <div class="passenger-controls">
+              <div class="passenger-type">
+                <span>Adults (12+ years)</span>
+                <div class="counter">
+                  <button type="button" class="counter-btn minus">-</button>
+                  <span class="count">1</span>
+                  <button type="button" class="counter-btn plus">+</button>
                 </div>
-                <div class="passenger-type">
-                  <span>Children (2-11)</span>
-                  <div class="counter">
-                    <button type="button" class="counter-btn minus">-</button>
-                    <span class="count">0</span>
-                    <button type="button" class="counter-btn plus">+</button>
-                  </div>
+              </div>
+              <div class="passenger-type">
+                <span>Children (2-12 years)</span>
+                <div class="counter">
+                  <button type="button" class="counter-btn minus">-</button>
+                  <span class="count">0</span>
+                  <button type="button" class="counter-btn plus">+</button>
                 </div>
-                <div class="passenger-type">
-                  <span>Infants (0-2)</span>
-                  <div class="counter">
-                    <button type="button" class="counter-btn minus">-</button>
-                    <span class="count">0</span>
-                    <button type="button" class="counter-btn plus">+</button>
-                  </div>
+              </div>
+              <div class="passenger-type">
+                <span>Infants (under 2)</span>
+                <div class="counter">
+                  <button type="button" class="counter-btn minus">-</button>
+                  <span class="count">0</span>
+                  <button type="button" class="counter-btn plus">+</button>
                 </div>
               </div>
             </div>
@@ -93,21 +106,34 @@
 
         <form id="whatsappForm">
           <div class="form-group">
-            <input type="text" name="name" placeholder="Full Name" required />
-          </div>
-          <div class="form-group">
+            <label for="name">Full Name</label>
             <input
-              type="email"
-              name="email"
-              placeholder="Email Address"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your full name"
               required
             />
           </div>
+
           <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
             <input
               type="tel"
+              id="phone"
               name="phone"
-              placeholder="Phone Number"
+              placeholder="Enter your phone number"
               required
             />
           </div>
@@ -115,45 +141,33 @@
             <select name="service" required>
               <option value="" disabled selected>Select Service</option>
               <option value="Flight Ticket">Flight Ticket</option>
-              <option value="Cargo Service">Cargo Service</option>
               <option value="Hotel Reservation">Hotel Reservation</option>
-              <option value="Visa Assistance">Visa Assistance</option>
               <option value="Train Service">Train Service</option>
-              <option value="Other">Other Travel Services</option>
             </select>
           </div>
+
           <div class="form-group">
+            <label for="details">Additional Details</label>
             <textarea
+              id="details"
               name="details"
               rows="4"
-              placeholder="Your request details..."
-              required
+              placeholder="Any special requests or additional information"
             ></textarea>
           </div>
+
           <button type="submit">
-            <i class="fab fa-whatsapp"></i> Send via WhatsApp
+            <i class="fab fa-whatsapp"></i> Book via WhatsApp
           </button>
         </form>
-      </section>
+      </div>
 
-      <section class="contact-info">
+      <div class="contact-info">
         <h2>Contact Information</h2>
 
         <div class="contact-item">
-          <!-- <div class="contact-icon">
-            <i class="fas fa-map-marker-alt"></i>
-          </div> -->
-          <!-- <div class="contact-text">
-            <h3>Address</h3>
-            <p class="social-media">
-              32, Stephen Toba Close, Oshodi/Off Airport Road, Lagos, Nigeria
-            </p> -->
-          <!-- </div> -->
-        </div>
-
-        <div class="contact-item">
           <div class="contact-icon">
-            <i class="fas fa-phone-alt"></i>
+            <i class="fas fa-phone"></i>
           </div>
           <div class="contact-text">
             <h3>Phone Numbers</h3>
@@ -174,7 +188,7 @@
 
         <div class="contact-item">
           <div class="contact-icon">
-            <i class="fa-solid fa-user-group"></i>
+            <i class="fas fa-map-marker-alt"></i>
           </div>
           <div class="contact-text">
             <h3>Social Media</h3>
@@ -215,7 +229,7 @@
             <i class="fab fa-whatsapp"></i>
           </a>
         </div>
-      </section>
+      </div>
 
       <section class="testimonials">
         <h2>What Our Clients Say</h2>
@@ -225,7 +239,7 @@
               "B Special Aviation made my travel arrangements seamless. Their
               attention to detail is exceptional!"
             </p>
-            <p class="testimonial-author">- Adeola Johnson</p>
+            <p class="testimonial-author">- Emeka Nnadi</p>
           </div>
           <div class="testimonial-card">
             <p class="testimonial-text">
@@ -239,7 +253,7 @@
               "The cargo service was efficient and my goods arrived on time.
               Highly recommended!"
             </p>
-            <p class="testimonial-author">- Emeka Nnadi</p>
+            <p class="testimonial-author">- Adeola Johnson</p>
           </div>
           <div class="testimonial-card">
             <p class="testimonial-text">
@@ -267,7 +281,7 @@
     </main>
 
     <footer>
-      <p>&copy; 2025 B Special Aviation Travels. All Rights Reserved.</p>
+      <p>&copy; 2025 B Special Aviation Travels. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
   </body>

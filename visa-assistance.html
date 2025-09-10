@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>B special Aviation Travels - Virtual Assistance</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="visa-assistance.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="nav-logo">B Special Avaiation Travels</div>
+
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="visa-assistance.html" class="nav-link active"
+            >Visa Assistance</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">About</a>
+        </li>
+      </ul>
+
+      <div class="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header">
+      <h1>Visa Assistance</h1>
+      <p>
+        Our dedicated team is here to help you with all your travel needs. Get
+        personalized assistance for flight bookings, hotel reservations, and
+        more.
+      </p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="assistance-section">
+        <div class="assistance-info">
+          <h2>How We Can Help You</h2>
+
+          <div class="service-item">
+            <div class="service-icon">
+              <i class="fas fa-plane"></i>
+            </div>
+            <div class="service-text">
+              <h3>Flight Bookings</h3>
+              <p>
+                Let our experts find the best flights for your itinerary and
+                budget.
+              </p>
+            </div>
+          </div>
+
+          <div class="service-item">
+            <div class="service-icon">
+              <i class="fas fa-hotel"></i>
+            </div>
+            <div class="service-text">
+              <h3>Hotel Reservations</h3>
+              <p>We'll find the perfect accommodation for your travel needs.</p>
+            </div>
+          </div>
+
+          <div class="service-item">
+            <div class="service-icon">
+              <i class="fas fa-train"></i>
+            </div>
+            <div class="service-text">
+              <h3>Train Services</h3>
+              <p>
+                Book train tickets for seamless connections to your destination.
+              </p>
+            </div>
+          </div>
+
+          <!-- <div class="service-item">
+            <div class="service-icon">
+              <i class="fas fa-concierge-bell"></i>
+            </div>
+            <div class="service-text">
+              <h3>Special Requests</h3>
+              <p>
+                Have specific needs? We'll handle all your special requests.
+              </p>
+            </div>
+          </div> -->
+
+          <div class="service-item">
+            <div class="service-icon">
+              <i class="fas fa-headset"></i>
+            </div>
+            <div class="service-text">
+              <h3>24/7 Support</h3>
+              <p>Our team is available around the clock to assist you.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="booking-form">
+          <h2>Get Assistance</h2>
+          <form id="whatsappForm">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your full name"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter your phone number"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="service">Service Type</label>
+              <select id="service" name="service" required>
+                <option value="" disabled selected>Select Service</option>
+                <option value="Flight Ticket">Flight Ticket</option>
+                <option value="Hotel Reservation">Hotel Reservation</option>
+                <option value="Train Service">Train Service</option>
+                <option value="Other">Other Assistance</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="details">Comments</label>
+              <textarea
+                id="details"
+                name="details"
+                rows="4"
+                placeholder="What can we do for you?"
+              ></textarea>
+            </div>
+
+            <button type="submit">
+              <i class="fab fa-whatsapp"></i> Contact via WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 B Special Aviation Travels. All rights reserved.</p>
+    </footer>
+
+    <script src="virtual-assistance.js"></script>
+  </body>
+</html>
