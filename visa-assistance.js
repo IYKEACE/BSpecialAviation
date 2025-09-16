@@ -29,7 +29,6 @@ document.addEventListener("DOMContentLoaded", function () {
       // Get form data
       var name = this.name.value.trim();
       var phone = this.phone.value.trim();
-      var service = this.service.value;
       var details = this.details.value.trim();
 
       // Create message
@@ -37,7 +36,6 @@ document.addEventListener("DOMContentLoaded", function () {
         `🛫 Virtual Assistance Request:%0A%0A` +
         `👤 Name: ${name}%0A` +
         `📞 Phone: ${phone}%0A` +
-        `🔧 Service Needed: ${service}%0A` +
         `📋 Details: ${details}`;
 
       var whatsappUrl = `https://wa.me/2348028256981?text=${message}`;
