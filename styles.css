@@ -22,7 +22,7 @@ body {
 
 /* Navigation Bar Styles */
 .navbar {
-  background-color: var(--primary);
+  background-color: rgba(0, 51, 102, 0.9);
   padding: 0.8rem 1rem;
   display: flex;
   justify-content: space-between;
@@ -43,8 +43,11 @@ body {
 
 .nav-logo img {
   height: 40px;
+  width: 50px;
   margin-right: 10px;
+  border-radius: 10%;
 }
+
 
 .nav-menu {
   display: flex;
@@ -91,7 +94,7 @@ header {
   position: relative;
 }
 
-.logo-container {
+/* .logo-container {
   display: flex;
   justify-content: center;
   margin-bottom: 1rem;
@@ -103,7 +106,7 @@ header {
   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
   max-width: 100%;
   height: auto;
-}
+} */
 
 .tagline {
   font-style: italic;

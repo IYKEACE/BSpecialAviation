@@ -48,6 +48,7 @@ body {
 .nav-logo img {
   height: 40px;
   margin-right: 10px;
+  border-radius: 10%;
 }
 
 .nav-menu {
